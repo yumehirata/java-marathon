@@ -7,9 +7,9 @@
 </head>
 <body>
 <form action="${pageContext.request.contextPath}/userInfo/input">
-名前：<input type="text" name="name">
-年齢：<input type="text" name="age">
-住所：<input type="text" name="address">
+名前：<input type="text" name="name"><br>
+年齢：<input type="text" name="age"><br>
+住所：<input type="text" name="address"><br>
 <input type="submit" value="送信">
 </form>
 </body>

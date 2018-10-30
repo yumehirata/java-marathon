@@ -7,8 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-名前：<c:out value="${user.name}"/>
-年齢：<c:out value="${user.age}"/>
-住所：<c:out value="${user.address}"/>
+<table>
+<tr><td>名前：<c:out value="${user.name}"/></td></tr>
+<tr><td>年齢：<c:out value="${user.age}"/></td></tr>
+<tr><td>住所：<c:out value="${user.address}"/></td></tr>
+</table>
 </body>
 </html>
