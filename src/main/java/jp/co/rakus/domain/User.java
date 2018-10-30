@@ -2,7 +2,7 @@ package jp.co.rakus.domain;
 
 /**
  * ユーザーの定義をするクラス.
- * @author rksuser
+ * @author yume.hirata
  *
  */
 public class User {
