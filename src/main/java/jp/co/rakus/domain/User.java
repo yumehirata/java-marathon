@@ -1,15 +1,28 @@
 package jp.co.rakus.domain;
 
 /**
- * ユーザーの定義をするクラス.
+ * ユーザー情報を表すドメイン.
+ * 
  * @author yume.hirata
  *
  */
 public class User {
-
+	/** 名前 */
 	private String name;
-	private Integer age;
+	/** 年齢 */
+	private String age;
+	/** 住所 */
 	private String address;
+	/** ID */
+	private Integer id;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
@@ -19,11 +32,11 @@ public class User {
 		this.name = name;
 	}
 
-	public Integer getAge() {
+	public String getAge() {
 		return age;
 	}
 
-	public void setAge(Integer age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 

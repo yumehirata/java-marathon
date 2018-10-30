@@ -22,7 +22,7 @@ public class CalcController {
 	/**
 	 * 入力画面を表示.
 	 * 
-	 * @return
+	 * @return　入力画面
 	 */
 	@RequestMapping("/")
 	public String toInput() {
@@ -36,7 +36,8 @@ public class CalcController {
 	 *            計算用の数字1
 	 * @param num2
 	 *            計算用の数字2
-	 * @return
+	 * @return　出力画面
+	 * 
 	 */
 	@RequestMapping("/input")
 	public String input(String num1, String num2) {
@@ -57,7 +58,8 @@ public class CalcController {
 
 	/**
 	 * 出力画面2を表示させる.
-	 * @return
+	 * 
+	 * @return　
 	 */
 	@RequestMapping("/toOutputValue2")
 	public String toOutputValue2() {

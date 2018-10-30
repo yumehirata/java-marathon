@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 入力結果を受け渡すコントローラー.
+ * 
  * @author yume.hirata
  *
  */
@@ -16,6 +17,8 @@ public class NameReceiveController {
 	
 	/**
 	 * 入力画面を表示する.
+	 * 
+	 * @return	入力画面
 	 */
 	@RequestMapping("/")
 	public String toInput() {
@@ -27,9 +30,9 @@ public class NameReceiveController {
 	 * 出力画面を表示する.
 	 * @param name	入力された名前
 	 * @param model	出力用の変数
-	 * @return
+	 * @return	出力画面
 	 */
-	@RequestMapping("input")
+	@RequestMapping("/input")
 	public String input(String name,Model model) {
 		model.addAttribute("name",name);
 		return "outputname";

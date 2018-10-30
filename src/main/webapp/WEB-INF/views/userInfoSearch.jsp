@@ -6,6 +6,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<form action="${pageContext.request.contextPath}/search/input" method="post">
+ID:<input type="text" name="id"><br>
+<input type="submit" value="検索">
+</form>
 </body>
 </html>
