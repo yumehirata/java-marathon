@@ -27,6 +27,13 @@ public class RegisterController {
 		return "buyGoods";
 	}
 	
+	/**
+	 * 入力された商品価格を受け渡す
+	 * @param goods1	商品1の価格
+	 * @param goods2	商品2の価格
+	 * @param goods3	商品3の価格
+	 * @return
+	 */
 	@RequestMapping("/input")
 	public String input(String goods1,String goods2,String goods3) {
 		
@@ -34,11 +41,11 @@ public class RegisterController {
 		int g2 = Integer.parseInt(goods2);
 		int g3 = Integer.parseInt(goods3);
 		
-		int noTax = (g1+g2+g3)/3;
-		int taxInc = (int)((g1+g2+g3)/3*1.08);
+		int noTax = g1+g2+g3;
+		int taxInc = (int)((g1+g2+g3)*1.08);
 		
-		application.setAttribute("noTax", new Integer(noTax));
-		application.setAttribute("taxInc", new Integer(taxInc));
+		application.setAttribute("noTax", String.format("%,3d", noTax));
+		application.setAttribute("taxInc", String.format("%,3d", taxInc));
 		
 		return "totalPrice";
 	}

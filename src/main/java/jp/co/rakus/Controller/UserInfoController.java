@@ -29,7 +29,7 @@ public class UserInfoController {
 	 * @param name	ユーザーの名前
 	 * @param age	ユーザーの年齢
 	 * @param address	ユーザーの住所
-	 * @param model	受け渡すための変数
+	 * @param model	出力用の変数
 	 * @return
 	 */
 	@RequestMapping("/input")

@@ -45,9 +45,12 @@ public class CalcController {
 		int n2 = Integer.parseInt(num2);
 		int answer = n1 * n2;
 
-		session.setAttribute("n1", new Integer(n1));
-		session.setAttribute("n2", new Integer(n2));
-		session.setAttribute("answer", new Integer(answer));
+//		session.setAttribute("n1", new Integer(n1));
+//		session.setAttribute("n2", new Integer(n2));
+//		session.setAttribute("answer", new Integer(answer));
+		session.setAttribute("n1", n1);
+		session.setAttribute("n2", n2);
+		session.setAttribute("answer", answer);
 
 		return "outputValue";
 	}

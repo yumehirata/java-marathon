@@ -9,8 +9,8 @@
 <body>
 <h2>合計金額</h2>
 ■税抜き価格<br>
-円
+<c:out value="${noTax}"/>円<br>
 ■税込み価格<br>
-円
+<c:out value="${taxInc}"/>円
 </body>
 </html>
